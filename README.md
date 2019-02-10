@@ -24,5 +24,5 @@ WIP
 # Contributing
 WIP
 
-# Code walkthough
+# Code walkthrough
 WIP
