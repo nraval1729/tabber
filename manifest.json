@@ -1,0 +1,50 @@
+{
+  "name": "tabber",
+  "version": "1.0",
+  "description": "Supercharge your tabbing experience",
+  "browser_action": {
+    "default_popup": "tabber.html",
+    "default_icon": "tabber.png"
+  },
+  "background": {
+    "scripts": [
+      "tabber.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "commands": {
+    "create-new-tab-next-to-current": {
+      "suggested_key": {
+        "default": "Ctrl+T",
+        "mac": "MacCtrl +T"
+      },
+      "description": "Create new tab next to the current tab."
+    },
+    "move-current-tab-right": {
+      "suggested_key": {
+        "default": "Alt + Right",
+        "mac": "Alt + Right"
+      },
+      "description": "Move current tab to right."
+    },
+    "move-current-tab-left": {
+      "suggested_key": {
+        "default": "Alt + Left",
+        "mac": "Alt + Left"
+      },
+      "description": "Move current tab to left."
+    },
+    "group-tabs-by-domain": {
+      "suggested_key": {
+        "default": "Alt + Shift + A",
+        "mac": "Alt + Shift + A"
+      },
+      "description": "Group tabs by domain."
+    }
+  },
+  "manifest_version": 2
+}
